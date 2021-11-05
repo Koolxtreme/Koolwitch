@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body
+{
+    background-image: url(./../sources/bh.jpg);
+    min-height: 100vh;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #881C1B;
+}
+header a
+{
+    text-decoration: none;
+    pointer-events: none;
+}
+header div.logo
+{
+    height: 100%;
+    align-items: center;
+}
+header div.logo a
+{
+    color: #FFF;
+    font-size: 1.7em;
+    background-color: #9f1C1f;
+}
+header nav
+{
+    height: 100%;
+    align-items: center;
+}
+header nav ul
+{
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+header nav ul li
+{
+    margin-right: 8px;
+    padding: 10px;
+}
+header nav ul li a
+{
+    color: #FFF;
+    pointer-events: all;
+}
+header nav ul li a:hover
+{
+    color: #9f1C1f;
+    background-color: #FFF;
+}
+.banner
+{
+    width: 70vh;
+    height: 30vh;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+.menu-btn 
+{
+    color: #fff;
+    align-self: center;
+    margin-right: 20px;
+}
+
+@keyframes banner
+{
+    0%, 30% 
+    {
+        background-image: url(./../sources/Submarino-Sándwich-768x527.jpg);
+        opacity: 1;
+    }
+    31%, 34%
+    {
+        opacity: 0.1;
+    }
+    35%, 65%
+    {
+        background-image: url(./../sources/2.jpg);
+        opacity: 1;
+    }
+    66%, 69%
+    {
+        opacity: 0.1;
+    }
+    70%, 100%
+    {
+        background-image: url(./../sources/3.jpg);
+        opacity: 1;
+    }
+}
+main
+{
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 25px;
+    padding: 15px;
+    border: 3px solid black;
+}
+main div
+{
+    background-color: rgba(255,255,255,0.25);
+    padding: 15px;
+    margin: 15px;
+}
+main div h2
+{
+    margin-bottom: 10px;
+    font-size: 1.55em;
+    text-transform: uppercase;
+}
+main div ul
+{
+    list-style: none;
+}
+main div ul li
+{
+    margin-bottom: 15px;
+}
+main div ul li h3
+{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) 
+{
+    header nav
+    {
+        height: 60vh;
+        display: none;
+    }
+    header nav ul
+    {
+        flex-direction: column;
+    }
+    header nav ul li
+    {
+        margin: 15px 0; 
+    }
+    .show
+    {
+        display: block;
+    }
+}
+@media screen and (min-width: 701px)
+{
+    .menu-btn
+    {
+        display: none;
+    }
+}
